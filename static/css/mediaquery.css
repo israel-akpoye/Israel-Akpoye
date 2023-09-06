@@ -1,0 +1,113 @@
+.container {
+    width: 90%;
+}
+
+/* HEADER STARTING */
+nav {
+    background-color: var(--secondary-color);
+}
+
+nav .logo a {
+    color: var(--dark-color);
+}
+
+.nav-links-container {
+    width: 100%;
+    height: calc(100% - 70px);
+    position: fixed;
+    bottom: 0;
+    left: -100%;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    flex-direction: column;
+    transition: var(--transition);
+    background-color: var(--secondary-color);
+}
+nav .nav-links-container.active {
+    left: 0%;
+ }
+
+.nav-links-header {
+    flex-direction: column;
+}
+
+.nav-links-header li {
+    margin-left: 0rem;
+    margin-bottom: 1rem;
+}
+
+.nav-links-header li a {
+    color: var(--dark-color);
+}
+
+
+.nav-links-footer {
+    color: var(--dark-color);
+    display: flex;
+}
+
+.toggle-nav {
+    display: flex;
+}
+
+/* intro starting */
+.intro-container .container {
+    padding: 0.8rem 0.5rem;
+    font-size: 0.8rem;
+}
+
+.intro-container .container h1:nth-child(4) {
+    font-size: 0.8rem;
+}
+
+
+/* HEADER ENDING */
+/* ABOUT STARTING */
+.about-txt .about-h2 {
+    text-align: center;
+}
+.about-txt .cv-download-btn {
+    font-size: 13px;
+    color: var(--secondary-color);
+   background-color: var(--primary-color);
+}
+
+/* ABOUT ENDING */
+
+/* SKILL STARTING */
+.skill-box {
+    width: 80%;
+}
+
+.skill-p {
+    width: 80%;
+}
+
+/* SKILL ENDING */
+
+
+
+/* PROJECT STARTING */
+.project-p {
+    text-align: center;
+}
+
+.project-items {
+    width: 100%;
+}
+
+.project-card {
+    width: 100%;
+    height: auto;
+}
+
+.project-card-img {
+    margin: 0.4rem auto;
+}
+.project-btn {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+
+/* PROJECT ENDING */
