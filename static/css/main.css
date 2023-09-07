@@ -77,7 +77,7 @@ nav .logo a {
 .toggle-nav {
     width: 25px;
     height: 25px;
-    padding: 0.5rem;
+    padding: 0.4rem;
     cursor: pointer;
     display: none;
     align-items: center;
@@ -139,7 +139,7 @@ nav.scroll li a {
     position: fixed;
     bottom: 30px;
     right: 18px;
-    display: none;
+    display: flex;
     font-weight: 400;
     border-radius: 2rem;
     padding: 0.3rem 1rem;
