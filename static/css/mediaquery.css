@@ -8,7 +8,7 @@ nav {
 }
 
 nav .logo a {
-    color: var(--dark-color);
+    color: var(--primary-color);
 }
 
 .nav-links-container {
@@ -17,15 +17,15 @@ nav .logo a {
     position: fixed;
     bottom: 0;
     left: -100%;
-    padding-top: 1rem;
-    padding-bottom: 2rem;
+    padding: 1rem;
     flex-direction: column;
     transition: var(--transition);
     background-color: var(--secondary-color);
 }
+
 nav .nav-links-container.active {
     left: 0%;
- }
+}
 
 .nav-links-header {
     flex-direction: column;
@@ -33,7 +33,7 @@ nav .nav-links-container.active {
 
 .nav-links-header li {
     margin-left: 0rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
 }
 
 .nav-links-header li a {
@@ -44,10 +44,16 @@ nav .nav-links-container.active {
 .nav-links-footer {
     color: var(--dark-color);
     display: flex;
+    font-weight: 700;
 }
 
 .toggle-nav {
     display: flex;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 1.3rem;
 }
 
 /* intro starting */
@@ -56,35 +62,27 @@ nav .nav-links-container.active {
     font-size: 0.8rem;
 }
 
-.intro-container .container h1:nth-child(4) {
-    font-size: 0.8rem;
-}
-
-
 /* HEADER ENDING */
+
+
+
+
+
+
+
 /* ABOUT STARTING */
-.about-txt .about-h2 {
+.about-txt-container h2 {
     text-align: center;
-}
-.about-txt .cv-download-btn {
-    font-size: 13px;
-    color: var(--secondary-color);
-   background-color: var(--primary-color);
 }
 
 /* ABOUT ENDING */
 
 /* SKILL STARTING */
 .skill-box {
-    width: 80%;
-}
-
-.skill-p {
-    width: 80%;
+    width: 100%;
 }
 
 /* SKILL ENDING */
-
 
 
 /* PROJECT STARTING */
@@ -101,13 +99,14 @@ nav .nav-links-container.active {
     height: auto;
 }
 
+/* 
 .project-card-img {
     margin: 0.4rem auto;
-}
-.project-btn {
+} */
+/* .project-btn {
     background-color: var(--primary-color);
     color: var(--secondary-color);
-}
+} */
 
 
 /* PROJECT ENDING */
