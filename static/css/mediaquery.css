@@ -33,13 +33,12 @@ nav .nav-links-container.active {
 
 .nav-links-header li {
     margin-left: 0rem;
-    margin-bottom: 0.8rem;
+    margin-bottom: 1.5rem;
 }
 
 .nav-links-header li a {
     color: var(--dark-color);
 }
-
 
 .nav-links-footer {
     color: var(--dark-color);
@@ -65,15 +64,13 @@ h1 {
 /* HEADER ENDING */
 
 
-
-
-
-
-
 /* ABOUT STARTING */
-.about-txt-container h2 {
+.about-txt-container {
     text-align: center;
+    width: 100%;
+    padding: .1rem 2rem 2rem;
 }
+
 
 /* ABOUT ENDING */
 
@@ -98,15 +95,6 @@ h1 {
     width: 100%;
     height: auto;
 }
-
-/* 
-.project-card-img {
-    margin: 0.4rem auto;
-} */
-/* .project-btn {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-} */
 
 
 /* PROJECT ENDING */

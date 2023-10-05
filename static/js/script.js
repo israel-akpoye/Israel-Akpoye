@@ -17,8 +17,9 @@ function toggle() {
    toggleNav.classList.toggle('active');
 
 };
-// hire me modal
+// toggle hire me modal
 function openModal() {
    const Modal = document.getElementById('hire-me-modal');
    Modal.classList.toggle('active');
 };
+
