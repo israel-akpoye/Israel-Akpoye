@@ -12,8 +12,9 @@ header{
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../media/img/bg.jpg);
 }
 nav{
+    z-index: 1;
     position: fixed;
-    top: 0;;
+    top: 0;
     width: 100%;
     background-color: var(--secondary-dark-color);
 }
@@ -160,17 +161,19 @@ nav .nav-btn{
     font-family: 'Ubuntu', sans-serif;
     font-weight: 400;
     line-height: 2.2;
-    margin: 1rem;
     padding: 0.5rem;
 
     &:nth-child(1){
-        width: 200px;
-        height: 200px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+       
     }
 }
 .about-card > img{
-    width: 160px;
-    height: 160px;
+    width: 150px;
+    height: 150px;
 }
 .about-card h3{
     font-size: 17px;
@@ -502,16 +505,6 @@ footer .wrapper{
     }
     .about-card{
         text-align: center;
-    
-        &:nth-child(1){
-            width: 200px;
-            height: 200px;
-        }
-    }
-    .about-card > img{
-        width: 200px;
-        height: 200px;
-    
     }
     .about-card h3{
         text-align: center;
@@ -526,6 +519,12 @@ footer .wrapper{
     }
     
     /* about section ending */
+    /* service section starting */
+    .service-card{
+        width: 100%;
+    }
+    /* service section ending */
+    
 }
 
 
