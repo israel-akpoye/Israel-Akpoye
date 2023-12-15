@@ -172,8 +172,11 @@ nav .nav-btn{
     width: 160px;
     height: 160px;
 }
+.about-card h3{
+    font-size: 17px;
+}
 .about-card p{
-    margin-bottom: 1rem;
+    padding-bottom: 1rem;
 }
 .about-card .download-btn{
     background-color: grey;
@@ -208,6 +211,13 @@ nav .nav-btn{
     padding: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: var(--border-radious);
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover{
+        position: relative;
+        transform: rotate(-4deg);
+    }
 }
 .service-card-icon-wrapper{
     width: 40px;
@@ -224,6 +234,7 @@ nav .nav-btn{
 }
 .service-card h3{
     padding: 0.5rem 0px;
+    font-size: 16px;
 }
 .service-card p{
     margin-bottom: 1rem;
@@ -251,6 +262,7 @@ nav .nav-btn{
 
 }
 .profile-item{
+    width: 270px;
     padding: 1rem;
     background-color: var(--primary-dark-color);
     border-radius: var(--border-radious);
