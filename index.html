@@ -1,278 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Israel Akpoye</title>
-    <!-- STYLESHEET -->
+    <!-- page icon -->
+     <link rel="icon" href="./static/media/img/profile_img.png">
+    <!-- css-link -->
     <link rel="stylesheet" href="./static/css/main.css">
-    <!-- CSS MEDIA QUERY -->
-    <link rel="stylesheet" href="./static/css/mediaquery.css" media="(max-width:650px)">
-    <!-- TITTLE-ICON -->
-    <link rel="shortcut-img" href="./static/media/profile.png">
-    <!-- AOS LIBRARY -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <!-- FONT AWESOME CDN -->
+    <link rel="stylesheet" href="./static/css/config.css">
+     <!-- AOS LIBRARY -->
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- ROBOTO -->
+    <!-- Google-font-links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Labrada:wght@500&family=Roboto&family=Roboto+Flex:opsz,wght@8..144,100;8..144,700&family=Shadows+Into+Light&family=Ubuntu:ital,wght@0,300;0,400;1,700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;800&family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <!-- HEAD STARTING -->
-    <section class="header" id="header">
+    <!--
+         header-section-starting
+     -->
+    <header>
         <nav>
-            <div class="container">
+            <div class="wrapper">
                 <div class="logo"><a href="#">Israel Akpoye</a></div>
-                <div class="nav-links-container" id="nav-links-container">
-                    <div class="nav-links-header">
-                        <li><a href="#header" class="active" onclick="toggle()"><i class="fa fa-home"></i> Home</a></li>
-                        <li><a href="#about" onclick="toggle()"><i class="fa fa-user"></i> About</a></li>
-                        <li><a href="#skill" onclick="toggle()"><i class="fa fa-cogs"></i> Skills</a></li>
-                        <li><a href="#Project" onclick="toggle()"><i class="fa fa-archive"></i> Project</a></li>
-                        <li><a href="#contact" onclick="toggle()"><i class="fa fa-phone"></i> Contact</a></li>
-                    </div>
-                    <div class="nav-links-footer">
-                        <p class="nav-copy-right">&copy; 2023 || Israel Akpoye</p>
-                    </div>
+                <div class="nav-links" id="nav-links">
+                    <ul>
+                        <li><a href="#"  onclick="toggle()" class="active"><i class="fa fa-home"></i> Home</a></li>
+                        <li><a href="#about-section"  onclick="toggle()"><i class="fa fa-info"></i> About</a></li>
+                        <li><a href="#service-section"  onclick="toggle()"><i class="fa fa-cogs"></i> Services</a></li>
+                        <li><a href="#contact-section"  onclick="toggle()"> <i class="fa fa-phone"></i> Contact</a></li>
+                    </ul>
                 </div>
-                <div class="toggle-nav" onclick="toggle()">
-                    <div class="toggle-bar"></div>
-                    <div class="toggle-bar"></div>
-                    <div class="toggle-bar"></div>
+                <div class="nav-btns-wrapper">
+                    <div class="nav-btn" onclick="toggleMode()" title="Toggle mode"><i class="fa   fa-moon-o "></i></div>
+                    <div class="nav-btn"title="Profile" onclick="Toggleprofile()"><i class="fa  fa-user"></i></div>
+                    <div class="nav-btn"  onclick="toggle()">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
                 </div>
             </div>
         </nav>
-        <div class="intro-container">
-            <div class="container" data-aos="fade-in" data-aos-delay="50" data-aos-duration="1000"
-                data-aos-easing="ease-in-out">
-                <h1>Hello!</h1>
-                <h1>I'm Israel Akpoye</h1>
-                <h1>From Delta State, Nigeria.</h1>
-                <h2>I Design, Build, and Mentain Websites</h2>
-                <button class="open-hire-me-modal" onclick="openModal()">Hire me <i class="fa fa-cog"></i></button>
-                <div class="hire-me-modal" id="hire-me-modal">
-                    <div class="modal-item">
-                        <!-- <h4>Hire me</h4> -->
-                        <h3>
-                            Welcome to my personal website! For business opportunities, you can contact me via my email
-                            <strong>isdawadakpoye@gmail.com</strong>
-                        </h3>
-                        <div class="close-hire-me-modal" onclick="openModal()">
-                            <i class="fa fa-times"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- HEAD ENDING -->
-
-    <!-- ABOUT STARTING -->
-    <section class="about" id="about">
-        <div class="container" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000"
-            data-aos-easing="ease-in-out">
-            <h1 class="title">About</h1>
+        <div class="intro">
+            <div class="wrapper">
+                 <h1>I am Israel Akpoye</h1>
+                 <p>I Design, Build, and Maintain Websites</p>
+                 <a href="#about-section" class="about-btn" title="About me...?"> About me <i class="fa fa-chevron-down"></i> </a>
+            </div>     
+        </div> 
+    </header>
+    <!-- header-section-ending -->
+    <!-- About-section-starting -->
+    <section class="about-section" id="about-section">
+        <h1 class="page-tittle">ABOUT</h1>
+        <div class="wrapper">
             <div class="about-items">
-                <div class="about-img-container">
-                    <img src="./static/media/profile_img.png" alt="profile image">
-                </div>
-                <div class="about-txt-container">
-                    <h2>Israel Dawadakpoye</h2>
-                    <p>Hey there! welcome to my portfolio, i am Dawadakpoye Israel Victor, from Delta State,
-                        Nigeria. A Mechatronics Engineering student, from federal polytechnic Nekede. I am a tech
-                        enthusiast and a passionate web developer with over 3 years of working and learning experence,
-                        as a freelancer, i have a strong eye for design and attension to detail, and i am always
-                        looking for ways to improve my skills, since technology keeps improving. My goal is to continue
-                        learning and growing as a developer, and to one day become a lead developer or technical
-                        director.
+                <div class="about-card"><img src="./static/media/img/profile_img.png"></div>
+                <div class="about-card">
+                    <h3>DAWADAKPOYE ISRAEL VICTOR</h3>     
+                    <p>
+                        Welcome to my website. I'm Dawadakpoye Israel Victor, a Frontend web developer
+                        from Delta State, Nigeria. I have over 3 years of experience working and learning 
+                        in this field, and I am passionate about the ever-changing landscape of technology.
+                        To learn more about my skills and qualificatiions, please download my CV.
+                        I'm always open to collaboration and business opportunities, and you can find me on
+                        various social media platforms. I look forward to connecting with you!
                     </p>
-                    <p>For collaboration or bussiness oportunities, feel free to contact me via any of my social media
-                        profiles, in this website.
-                    </p>
-                    <a href="./static/media/Israel Dawadakpoye important info-about-CV.pdf" class="cv-download-btn"
-                        download target="_blank">Download CV <i class="fa fa-download"></i></a>
+                    <a href="./static/media/doc/Dawadakpoye_Israel_Victor_CV.pdf" class="download-btn" download target="_blank" title="Get a copy of my CV">Download CV <i class="fa fa-download"></i></a>
                 </div>
             </div>
         </div>
     </section>
-    <!-- ABOUT ENDING -->
-
-    <!-- SKILL STARTING -->
-    <section id="skill" id="skill">
-        <div class="container">
-            <h1 class="title">Skill</h1>
-            <p class="skill-p">
-                These are some of the skills and tools i use.
-            </p>
-            <div class="skill-items">
-                <div class="skill-box" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000"
-                    data-aos-easing="ease-in-out">
-                    <h3>BASICS</h3>
-                    <div class="skill-box-row">
-                        <div class="skill-box-row-right">HTML</div>
-                        <div class="skill-box-row-left"></div>
+    <!-- About-section-ending -->
+     <!-- service-section-starting -->
+     <section class="service-section" id="service-section">
+        <h1 class="page-tittle">SERVICE</h1>
+        <div class="wrapper">
+            <div class="service-items">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                    <div class="service-card-icon-wrapper">
+                        <i class="fa fa-code"></i>
                     </div>
-                    <div class="skill-box-row">
-                        <div class="skill-box-row-right">CSS</div>
-                        <div class="skill-box-row-left"></div>
-                    </div>
-                    <div class="skill-box-row">
-                        <div class="skill-box-row-right">JavaScript</div>
-                        <div class="skill-box-row-left"></div>
-                    </div>
-                    <div class="skill-box-row">
-                        <div class="skill-box-row-right">Git</div>
-                        <div class="skill-box-row-left"></div>
-                    </div>
-                    <div class="skill-box-row">
-                        <div class="skill-box-row-right">Github</div>
-                        <div class="skill-box-row-left"></div>
-                    </div>
+                    <h3>Web development</h3>
+                    <p>
+                        I am an experieced web developer, specializing in creating beautiful Websites
+                        for a wide range of industries, including businesses, banks, and brokers.
+                        I also offer SEO-friendlly content writing services to help you rank higher on
+                        search engines.
+                    </p>
                 </div>
-                <div class="skill-box" data-aos="fade-up" data-aos-delay="55" data-aos-duration="1000"
-                    data-aos-easing="ease-in-out">
-                    <h3>BACKEND</h3>
-                    <div class="skill-box-row">
-                        <div class="skill-box-row-right">MSQL</div>
-                        <div class="skill-box-row-left"></div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                    <div class="service-card-icon-wrapper">
+                        <i class="fa fa-podcast"></i>
                     </div>
-                    <div class="skill-box-row">
-                        <div class="skill-box-row-right">Database</div>
-                        <div class="skill-box-row-left"></div>
-                    </div>
-                    <div class="skill-box-row">
-                        <div class="skill-box-row-right">PHP</div>
-                        <div class="skill-box-row-left"></div>
-                    </div>
-                    <div class="skill-box-row">
-                        <div class="skill-box-row-right">Libraries</div>
-                        <div class="skill-box-row-left"></div>
-                    </div>
-                    <div class="skill-box-row">
-                        <div class="skill-box-row-right">Deloping</div>
-                        <div class="skill-box-row-left"></div>
-                    </div>
-
+                    <h3>Frontend web training</h3>
+                    <p>
+                        I offer comprehensive Frontend web development training, tailored to your
+                         specific needs and skill level. From the basics of HTML and CSS to more
+                          advanced topics like JavaScript.
+                    </p>
                 </div>
-                <div class="skill-box" data-aos="fade-up" data-aos-delay="60" data-aos-duration="1000"
-                    data-aos-easing="ease-in-out">
-                    <h3>DESIGN</h3>
-                    <div class="skill-box-row">
-                        <div class="skill-box-row-right">Coredraw</div>
-                        <div class="skill-box-row-left"></div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                    <div class="service-card-icon-wrapper">
+                        <i class="fa fa-pencil"></i>
                     </div>
-                    <div class="skill-box-row">
-                        <div class="skill-box-row-right">Photoshop</div>
-                        <div class="skill-box-row-left"></div>
-                    </div>
-                    <div class="skill-box-row">
-                        <div class="skill-box-row-right">Figma</div>
-                        <div class="skill-box-row-left">New</div>
-                    </div>
-                    <div class="skill-box-row">
-                        <div class="skill-box-row-right">More</div>
-                        <div class="skill-box-row-left"></div>
-                    </div>
-                </div>
-                <div class="skill-box" data-aos="fade-up" data-aos-delay="65" data-aos-duration="1000"
-                    data-aos-easing="ease-in-out">
-                    <h3>FRAMEWORK</h3>
-                    <div class="skill-box-row">
-                        <div class="skill-box-row-right">Bootstrap</div>
-                        <div class="skill-box-row-left"></div>
-                    </div>
-                    <div class="skill-box-row">
-                        <div class="skill-box-row-right">Laravel</div>
-                        <div class="skill-box-row-left">New</div>
-                    </div>
-                    <div class="skill-box-row">
-                        <div class="skill-box-row-right">React.js</div>
-                        <div class="skill-box-row-left">New</div>
-                    </div>
+                    <h3>Copywriting</h3>
+                    <p>
+                        With my years of experence writing for Owlcade, i can create engaging
+                        and effective copy for your website, blog, or social media.
+                    </p>
                 </div>
             </div>
-
+        </div>
     </section>
-    <!-- SKILL ENDING -->
-
-    <!-- PROJECT STARTING -->
-    <section class="Project" id="Project">
-        <div class="container">
-            <h1 class="title">Project</h1>
-            <p class="project-p">These are some of my recent projects at hand
-            </p>
-            <div class="project-items">
-                <div class="project-card" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000"
-                    data-aos-easing="ease-in-out">
-                    <div class="project-card-img-wraper"><img src="./static/media/site-img.png" alt="website-img">
+    <!-- service-section-ending -->
+    <!-- contact-section-starting -->
+    <section class="contact-section" id="contact-section">
+        <h1 class="page-tittle">CONTACT</h1>
+        <div class="wrapper">
+            <div class="profile">
+                <div class="profile-item">
+                    <div class="profile-card">
+                        <img src="./static/media/img/profile_img.png">
                     </div>
-                    <div class="project-card-txt-wraper">
-                        <h3>YOur websites</h3>
-                        <p>I am waiting for you, to help you achieve your dream website (s).</p>
-                        <a href="https://www.facebook.com/profile.php?id=100076695520822" class="project-btn"
-                            title="What website would you love to build ?" target="_blank">Let's talk</a>
-                    </div>
-                </div>
-                <div class="project-card" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000"
-                    data-aos-easing="ease-in-out">
-                    <div class="project-card-img-wraper"><img src="./static/media/ownlacade-logo.png"
-                            alt="owlcade-logo"></div>
-                    <div class="project-card-txt-wraper">
-                        <h3>Owlcade</h3>
-                        <p>Currently i and other developers, are working on Owlcade website.
-                        </p>
-                        <a href="https://www.facebook.com/profile.php?id=100076695520822" class="project-btn"
-                            title="About Owlacade ?" target="_blank">Let's talk</a>
-                    </div>
-                </div>
-                <div class="project-card" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000"
-                    data-aos-easing="ease-in-out">
-                    <div class="project-card-img-wraper"><img src="./static/media/student-learning.png"
-                            alt="developer-img">
-                    </div>
-                    <div class="project-card-txt-wraper">
-                        <h3>Frontend Web Classes</h3>
-                        <p>I can help you become an IDAN frontend web developer.</p>
-                        <a href="https://www.facebook.com/profile.php?id=100076695520822" class="project-btn"
-                            title="How to get started ?" target="_blank">Let's talk</a>
+                    <div class="profile-card">
+                        <h1>Israel Akpoye</h1>
+                        <p>Frontend Web Developer</p>
+                        <div class="socialmedia-profile">
+                            <ul>
+                                <li><a href="https://www.instagram.com/israel_akpoye/?next=%2F" target="_blank" title="Instagram profile"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="https://www.facebook.com/profile.php?id=100076695520822" target="_blank" title="Facebook profile"><i class="fa fa-facebook"></i></a></li>
+                                <li><a  href="https://github.com/israel-akpoye" target="_blank" title="Github profile"><i class="fa fa-github"></i></a></li>
+                            </ul>
+                        </div>
+                        <a href="#" class="profile-btn" onclick="Toggleprofile()" title="Back to home page..?"> <i class="fa fa-arrow-left"></i> Back</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- PROJECT ENDING -->
-    <!-- CONTACT STARTING -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <hr>
-            <div class="contact-items">
-                <div class="copyright-box">
+     <!-- contact-section-ending -->
+    <!-- footer-section starting -->
+    <footer>
+        <div class="wrapper">
+            <div class="footer-items">
+                <div class="footer-box">
+                    <ul>
+                        <li><a href="https://www.instagram.com/israel_akpoye/?next=%2F" target="_blank" title="Instagram profile"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=100076695520822" target="_blank" title="Facebook profile"><i class="fa fa-facebook"></i></a></li>
+                        <li><a  href="https://github.com/israel-akpoye" target="_blank" title="Github profile"><i class="fa fa-github"></i></a></li>
+                    </ul>
+                    <div class="whatsapp">
+                        <ul>
+                            <li><a href="https://wa.me/message/U4NMPTYD23THM1" target="_blank" title="Any Opportunity...?"><i class="fa fa-whatsapp"></i></a>Any Opportunity...?</li>
+                        </ul>
+                    </div>  
+                </div>
+                <div class="footer-box">
                     <p>&copy; 2023 || Israel Akpoye</p>
                 </div>
-                <div class="social-profiles">
-                    <span class="span"><a href="https://wa.me/message/U4NMPTYD23THM1" target="_blank"><i
-                                class="fa fa-whatsapp"></i></a> </span>
-                    <span class="span"><a href="https://www.instagram.com/israel_akpoye/?next=%2F" target="_blank"><i
-                                class="fa fa-instagram"></i></a> </span>
-                    <span class="span"><a href="https://www.facebook.com/profile.php?id=100076695520822"
-                            target="_blank"><i class="fa fa-facebook"></i></a> </span>
-                    <span class="span"><a href="https://github.com/israel-akpoye" target="_blank"><i
-                                class="fa fa-github"></i></a> </span>
-                </div>
             </div>
-    </section>
-    <!-- CONTACT ENDING -->
-    <script rel="stylesheet" src="./static/js/script.js"></script>
+        </div>
+    </footer>
+    <!-- footer-section ending -->
+    <script src="./static/js/main.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
 </body>
-
 </html>
